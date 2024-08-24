@@ -1,0 +1,96 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#15a00e;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #009407;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    font-style:normal;
+    line-height: 1.5;
+
+}
+ol{
+    font-family:Arial, Helvetica, sans-serif;
+}
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+}
+h4{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#logo {
+    width:25% ;
+    float:left;
+    padding:10px ;
+    
+}
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style:disc;
+    margin-left: 75px;
+    padding-left: 25px 0;
+    float:left
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    
+}
+
+.imagen1{
+    size: 60px;
+    width: 250px;
+    
+}
+.imagen2{
+    size: 60px;
+    width: 400px;
+
+}
+.imagen3{
+    size: 60px;
+    width: 250px;
+
+}
+.imagen4{
+    size: 60px;
+    width: 360px;
+
+}
+.imagen5{
+    size: 60px;
+    width: 220px;
+
+}
+.imagen6{
+    size: 60px;
+    width: 350px;
+
+}
