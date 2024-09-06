@@ -5,114 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHITE HACKS</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css" media="screen">
     
-<header> <!--Header Define la cabecera de una págia web-->
-    <div class="menu">
-        <img src="logo.png" id= "logo" alt ="Logo"><!--logo--> 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li><!--Formulario de inicio de seccion-->
-                <li><a href="#nosotros">Nosotros</a></li><!--slogan, descripcion-->
-                <li><a href="#servicios y productos">Servicios y productos</a></li><!--con imagenes, sitios de interées-->
-                <li><a href="#contactanos">Contactanos</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+</head>
+<body style = "background-color: #58d851;">
+    <script src="/Bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="/Bootstrap/js/popper.min.js"></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
 
+    <header><!-- Barra de navegacion con clases de bootstrap para diseño y expacion -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #2adc65;">
+        <img alt="Brand" src="/White_hacks/white_hacks/logo.png" class= "logo" alt ="imagen">
+        <div class="container-fluid"><br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenedor colapse que contiene los elementos de navegacion -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <!-- Lista de elementos de la barra de navegacion -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#inicio" aria-current="page" class="nav-link active">Inicio</a><br>
+                            </li><br>
+                            <!-- Elemento de navegacion: enlace a una pagina de servicios -->
+                            <li class="nav-item">
+                                <a href="#nosotros" aria-current="page" class="nav-link active">nosotros</a>
+                            </li><br>
+                            <li class="nav-item">
+                                <a href="#servicios y productos" aria-current="page" class="nav-link active">Servicios y productos</a>
+                            </li><br>
+                            <!-- Elemento de navegacion: enlace a una pagina de productos -->
+                            <li class="nav-item">
+                                <a href="#contactanos" aria-current="page" class="nav-link active">Contactanos</a>
+                            </li><br>
+                            <li>
+                                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#ejemploModal" >Ingreso</button>
+                            </li>
+                        </ul> 
+
+
+    <!-- Contenedor principal que tiene clase modal y otras propiedades de Bootstrap -->
+    <div class="modal" id="ejemploModal" tabindex="-1" aria-labelledby="ejemploModalLabel" aria-hidden="true">
+        <!-- contenedor para centrar el contenido de la pantalla -->
+        <div class="modal-dialog">
+            <!-- contenedor que envuelve el contenido del modal -->
+            <div class="modal-content">
+
+                <!-- área donde se coloca el contenido principal del modal -->
+                <div class="modal-body">
+                    <!-- colocar contenido -->
+                    <div class="item" id="ingreso">
+                        <h3></h3><br>
+                        <div class="form" id="ingreso">
+                            <form>
+                                <div class="mb-3">
+                                    <h1 class="modal-title" id="ejemploModalLabel">Iniciar Sesión</h1><br>
+                                <label for="exampleInputEmail1" class="form-label">Ingresa tú Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text"><b>No compartas esta información con nadie</b></div>
+                                </div>
+                                <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- botón para cerrar el modal -->
+                                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cerrar</button><br>
+                                    <button type="button" class="btn btn-outline-success">Guardar cambios</button>
+                                </div>
+                            </form>
+                        
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>  
+                </div>
+        </div>
+    </nav>
+    </header>
+<br><br>
 <main>
-    <div class="item" id="inicio">
-        <h3>Bienvenido a White Hacks</h3><br>
-        <form>
-            <input type="email" name="email" placeholder="Ingresa tu correo">
-            <input type ="password" name="password" placeholder="Ingresa Contraseña">
-            <input type = "submit" value ="Ingresar">
-        </form>
-        <img src="/White_hacks/Imagenes/1.png" class= "imagen1" alt ="imagen">
-        <p>Tu fuente confiable en ciberseguridad y defensa digital.Nuestro propósito es ayudarte a prevenir y protegerte contra los ataques de hackers. Aquí encontrarás recursos, guías y herramientas diseñadas para fortalecer tu seguridad en línea. Nos dedicamos a brindarte el conocimiento necesario para que puedas navegar en el mundo digital con confianza y tranquilidad.</p><br>
-        
-        <h4>¿Qué es la ciberseguridad?</h4><br>
-        <img src="/White_hacks/Imagenes/2.png" class= "imagen2" alt ="imagen">
-        <p>
-            La ciberseguridad es la práctica de proteger sistemas, redes y datos contra accesos no autorizados, ataques y daños digitales. En un mundo cada vez más conectado, la ciberseguridad es fundamental para garantizar la privacidad, la integridad y la disponibilidad de la información, protegiendo tanto a individuos como a organizaciones de las crecientes amenazas cibernéticas.
-        </p><br>
-        <h3>¿Cómo Podemos Protegernos?</h3>
-        <img src="/White_hacks/Imagenes/3.png" class= "imagen3" alt ="imagen">
-        <ol>
-            <li>Usa Contraseñas Fuertes y Únicas: Crea contraseñas complejas, evita reutilizarlas en diferentes cuentas y cambia tus contraseñas regularmente.</li><br>
-            <li>Usa Contraseñas Fuertes y Únicas: Crea contraseñas complejas, evita reutilizarlas en diferentes cuentas y cambia tus contraseñas regularmente.</li><br>
-            <li>Activa la Autenticación en Dos Pasos: Añade una capa extra de seguridad a tus cuentas con la verificación en dos pasos (2FA), que requiere una segunda forma de autenticación.</li><br>
-            <li>Cuidado con los Correos y Enlaces Sospechosos: No abras correos de remitentes desconocidos ni hagas clic en enlaces sospechosos. El phishing es una técnica común para robar información.</li><br>
-            <li>Usa Redes Seguras: Evita conectarte a redes Wi-Fi públicas sin protección. Considera usar una red privada virtual (VPN) para cifrar tu conexión.</li><br>
-            <li>Realiza Copias de Seguridad: Asegúrate de hacer copias de seguridad de tus datos regularmente para evitar la pérdida de información en caso de un ataque.</li><br>
-            <li>Educa y Forma: Mantente informado sobre las últimas amenazas y mejores prácticas de seguridad. La educación es clave para la prevención.</li><br>
-        </ol>
-
+    <div class="card badge text-bg-success" style="max-width: 18rem;" id ="targeta1">
+        <div class="card-header ">Sitios de Interés</div>
+        <div class="card-body">
+        <p><a href="https://krebsonsecurity.com/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Krebs on Security</a></p>
+        <p><a href="https://isc.sans.edu" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">SANS Internet Storm Center</a></p>
+        <p><a href="https://thehackernews.com" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">The Hacker News</a></p>
+        <p><a href="https://haveibeenpwned.com" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Have I Been Pwned</a></p>
+        <p><a href="https://www.cisco.com/c/en_ca/products/security/what-is-cybersecurity.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">CISCO</a></p>
+        </div>
     </div>
-</main>
-
-<main>
-    <div class="item" id="nosotros">
-        <h3>Nosotros</h3><br>
-        <img src="/White_hacks/Imagenes/4.png" class= "imagen4" alt ="imagen">
-        <p>Somos una organización sin fines de lucro dedicada a la ciberseguridad, con la misión de crear un entorno digital más seguro. A través de nuestra plataforma, brindamos herramientas y conocimientos para prevenir y protegerse de ataques cibernéticos.
-        Nuestra comunidad incluye expertos, hackers de sombrero blanco y entusiastas, todos unidos por el deseo de hacer del ciberespacio un lugar más seguro. Aquí, todos son bienvenidos, ya sea para aprender, fortalecer sus habilidades, o compartir su experiencia y ayudar a otros.
-        Únete a nosotros en la lucha contra las amenazas digitales y sé parte de una comunidad comprometida con la seguridad en el mundo conectado de hoy.</p><br>
-
-    </div>
-</main>
-
-<main>
-    <div class="item" id="servicios y productos">
-        <h3>Servicios y productos</h3><br>
-        <img src="/White_hacks/Imagenes/6.png" class= "imagen5" alt ="imagen">
-        <p>Tu aliado en ciberseguridad. Ofrecemos una amplia gama de servicios diseñados para protegerte en el mundo digital.</p><br>
-        <ul>
-            <li>Asistencia Especializada: Conéctate con profesionales en ciberseguridad que pueden proporcionarte ayuda experta y soluciones personalizadas para protegerte contra amenazas y vulnerabilidades.</li><br>
-            <li>Licencias con Descuentos: Disfruta de acceso a aplicaciones y herramientas de seguridad a precios reducidos, facilitando la protección de tus datos y la implementación de medidas de seguridad efectivas.</li><br>
-            <li>Soporte en Emergencias: Si enfrentas un robo de datos o un ataque cibernético, nuestro equipo está disponible para asistirte en la recuperación y fortalecimiento de tu seguridad.</li><br>
-            <li>Comunidad Activa: Únete a nuestra comunidad para interactuar con expertos y entusiastas, compartir experiencias, resolver dudas y aprender juntos en un ambiente colaborativo.</li><br>
-            <li>Charlas y Talleres: Participa en charlas y talleresbr sobre ciberseguridad, donde podrás actualizarte sobre las últimas tendencias, amenazas y mejores prácticas en protección digital.</li><br>
-            <li>Clases y Cursos: Accede a una variedad de clases y cursos diseñados para todos los niveles, desde principiantes hasta expertos, para mejorar tus habilidades en ciberseguridad.</li><br>
-            <li>Consejos de Protección: Obtén recomendaciones prácticas y estrategias para protegerte en línea, desde medidas básicas hasta técnicas avanzadas para mantener tus datos y tu identidad seguros.</li><br>
-            
-        </ul>
-
-    </div>
-</main>
-
-<main>
-    <div class="item" id="contactanos">
-        <h3>Contactanos</h3>
-        <img src="/White_hacks/Imagenes/5.png" class= "imagen6" alt ="imagen">
-        <p>
-            Comunícate con nosotros a través de:
-        </p>
-        <ol>
-            <li>3224953010</li>
+    
+    <div class="card badge text-bg-success" style="max-width: 18rem;" id="contactanos">
+        <div class="card-header " >Contactanos</div><br>
+        <div class="card-body">
+        <p>Comunicate con nosostros a través de: </p>
+        <p><ul>
+            <li>3224953010</li><br>
             <li>jenniferl.sosa15@gmail.com</li>
-        </ol><br>
-        <h4>Sitios de interés</h4><br>
-        <p>
-            Finalmente encontrarás algunos sitios que te serán de gran apoyo en este mundo de la ciberseguridad.
-            <ol>
-                <li><a href="https://krebsonsecurity.com/" >Krebs on Security</a></li><br>
-                <li><a href="https://isc.sans.edu" >SANS Internet Storm Center</a></li><br>
-                <li><a href="https://thehackernews.com" >The Hacker News
-                </a></li><br>
-                <li><a href="https://www.cvedetails.com" >CVE Details
-                </a></li><br>
-                <li><a href="https://haveibeenpwned.com" >Have I Been Pwned
-                </a></li><br>
-                <li><a href="https://www.cisco.com/c/en_ca/products/security/what-is-cybersecurity.html" >CISCO
-                </a></li><br>
-            </ol>
-        </p>
-
+        </ul><br></p>
+        </div>
     </div>
-</main>
-
-
+    <div class="container text-center">
+        <div class="row align-items-start">
+        <div class="col">
+            <img src="/White_hacks/white_hacks/Imagenes/1.png" class= "imagen1" alt ="imagen">
+            
+            <p>
+                Tu fuente confiable en ciberseguridad y defensa digital. 
+                Nuestro propósito es ayudarte a prevenir y protegerte contra los ataques de hackers. Aquí encontrarás recursos, guías y herramientas diseñadas para fortalecer tu seguridad en línea. Nos dedicamos a brindarte el conocimiento necesario para que puedas navegar en el mundo digital con confianza y tranquilidad.</p><br>
+        </div>
+        <div class="col">
+            <div class="badge text-bg-success text-wrap" style="width: 10rem;">
+                ¿Qué es la ciberseguridad?
+            </div>
+            <img src="/White_hacks/white_hacks/Imagenes/2.png" class= "imagen2" alt ="imagen">
+            <p>
+                La ciberseguridad es la práctica de proteger sistemas, redes y datos contra accesos no autorizados, ataques y daños digitales. En un mundo cada vez más conectado, la ciberseguridad es fundamental para garantizar la privacidad, la integridad y la disponibilidad de la información, protegiendo tanto a individuos como a organizaciones de las crecientes amenazas cibernéticas.
+            </p><br>
+        </div>
+        <div class="col">
+            <div class="item" id="nosotros">
+                <div class="badge text-bg-success text-wrap" style="width: 7rem;">
+                    Nosotros
+                </div>
+                <img src="/White_hacks/white_hacks/Imagenes/4.png" class= "imagen4" alt ="imagen">
+                <p>Somos una organización sin fines de lucro dedicada a la ciberseguridad, con la misión de crear un entorno digital más seguro. A través de nuestra plataforma, brindamos herramientas y conocimientos para prevenir y protegerse de ataques cibernéticos.
+                Nuestra comunidad incluye expertos, hackers de sombrero blanco y entusiastas, todos unidos por el deseo de hacer del ciberespacio un lugar más seguro. Aquí, todos son bienvenidos, ya sea para aprender, fortalecer sus habilidades, o compartir su experiencia y ayudar a otros.
+                Únete a nosotros en la lucha contra las amenazas digitales y sé parte de una comunidad comprometida con la seguridad en el mundo conectado de hoy.</p><br>
+        
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+        <div class="col">
+            <div class="badge text-bg-success text-wrap" style="width: 8rem;">
+                ¿Cómo Podemos Protegernos?
+            </div>
+        <img src="/White_hacks/white_hacks/Imagenes/3.png" class= "imagen3" alt ="imagen">
+        <ul>
+            <li>Usa Contraseñas Fuertes y Únicas</li><br>
+            <li>Usa Contraseñas Fuertes y Únicas</li><br>
+            <li>Activa la Autenticación en Dos Pasos</li><br>
+            <li>Cuidado con los Correos y Enlaces Sospechosos</li><br>
+            <li>Usa Redes Seguras</li><br>
+            <li>Realiza Copias de Seguridad.</li><br>
+            <li>Educa y Forma</li><br>
+        </ul>
+        </div>
+        <div class="col">
+            <div class="item" id="servicios y productos"><br>   
+                <div class="badge text-bg-success text-wrap" style="width: 8rem;">
+                    Servicios y productos
+                </div>
+                <img src="/White_hacks/white_hacks/Imagenes/5.png" class= "imagen5" alt ="imagen">
+                <p>Tu aliado en ciberseguridad. Ofrecemos una amplia gama de servicios diseñados para protegerte en el mundo digital.</p><br>
+                <ul>
+                    <li>Asistencia Especializada</li><br>
+                    <li>Licencias con Descuentos</li><br>
+                    <li>Soporte en Emergencias</li><br>
+                    <li>Comunidad Activa</li><br>
+                    <li>Charlas y Talleres</li><br>
+                    <li>Clases y Cursos</li><br>
+                    <li>Consejos de Protección</li><br>
+                </ul>
+        </div>
+        </div>
+    </div>
+    
 </html>
